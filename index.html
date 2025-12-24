@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Buone Feste 🎄</title>
+<style>
+  body {
+    font-family: monospace;
+    background: #0f172a;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .gift {
+    width: 200px;
+    height: 200px;
+    background: #dc2626;
+    position: relative;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+
+  .gift:hover {
+    transform: scale(1.05);
+  }
+
+  .ribbon {
+    position: absolute;
+    background: #facc15;
+  }
+
+  .ribbon.vertical {
+    width: 30px;
+    height: 100%;
+    left: 85px;
+  }
+
+  .ribbon.horizontal {
+    height: 30px;
+    width: 100%;
+    top: 85px;
+  }
+
+  .message {
+    display: none;
+    text-align: center;
+    animation: fadeIn 1s forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
+</head>
+<body>
+
+<div id="gift" class="gift" onclick="openGift()">
+  <div class="ribbon vertical"></div>
+  <div class="ribbon horizontal"></div>
+</div>
+
+<div id="message" class="message">
+  <h1>🎄 Buone Feste!</h1>
+  <pre>
+while (curiosità && impegno) {
+    competenze++;
+}
+
+return 2025;
+  </pre>
+  <p>Grazie per questo anno di codice insieme.</p>
+</div>
+
+<script>
+function openGift() {
+  document.getElementById("gift").style.display = "none";
+  document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
